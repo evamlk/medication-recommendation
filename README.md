@@ -81,7 +81,7 @@ The public modules can then be imported directly:
 ```python
 from medrec.losses import SafetyAwareBCELoss
 from medrec.metrics import multilabel_metrics
-from medrec.models import GCNMedicationRecommender
+from medrec.models import MedicationGCN
 ```
 
 ## Data access and privacy
