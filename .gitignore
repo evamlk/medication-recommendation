@@ -1,0 +1,95 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+config.local.*
+local_config.*
+
+# Credentialed and licensed datasets
+data/
+datasets/
+mimic*/
+MIMIC*/
+drugbank*/
+DrugBank*/
+**/full database.xml
+**/full_database.xml
+
+# Patient-level and derived research artifacts
+prediction_bundles/
+prediction_bundles_*/
+checkpoints/
+artifacts/
+outputs/
+runs/
+results/private/
+**/patient_fold_assignments.csv
+**/visit_manifest.csv
+**/*admission*.csv
+**/*patient*.csv
+**/*subject*.csv
+**/*prediction*.npz
+**/*validation_oof*.npz
+**/*ddi_aware*.npz
+
+# Model weights and serialized objects
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+*.pickle
+
+# Large arrays and archives
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Licensed DrugBank-derived evidence
+**/drugbank_atc4_ddi_matrix.*
+**/drugbank_atc4_ddi_edges.csv
+**/ddi_pair_frequency_*.csv
+**/*interaction*description*
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+conda-env/
+*.egg-info/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+~$*
